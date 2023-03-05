@@ -57,7 +57,7 @@ const App = () => {
     const destinations = []
 
     let map = tt.map({
-      key: "8Rsflcm464DjJBsC9AL0wwhy14HqZHrc",
+      key: "",
       container: mapElement.current,
       stylesVisibility: {
         trafficIncidents: true,
@@ -99,7 +99,7 @@ const App = () => {
         return convertToPoints(destination)
       })
       const callParameters = {
-        key: "8Rsflcm464DjJBsC9AL0wwhy14HqZHrc",
+        key: "",
         destinations: pointsForDestinations,
         origins: [convertToPoints(origin)],
       }
@@ -132,7 +132,7 @@ const App = () => {
 
         ttapi.services
           .calculateRoute({
-            key: "8Rsflcm464DjJBsC9AL0wwhy14HqZHrc",
+            key: "",
             locations: sorted,
           })
           .then((routeData) => {
